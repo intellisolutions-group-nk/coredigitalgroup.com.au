@@ -1,0 +1,33 @@
+{
+  "brand": {
+    "name": "Core Digital Group",
+    "legalName": "Core Digital Group Pty Ltd",
+    "acn": "693 320 053",
+    "industry": "IT & Digital Marketing",
+    "country": "Australia",
+    "stateOfRegistration": "New South Wales"
+  },
+  "contact": {
+    "email": "info@coredigitalgroup.com.au",
+    "address": {
+      "street": "Unit 15, 2 Patricia Street",
+      "suburb": "Mays Hill",
+      "state": "NSW",
+      "postcode": "2145",
+      "country": "Australia"
+    }
+  },
+  "navigation": {
+    "header": [
+      { "label": "Home", "href": "/" },
+      { "label": "Services", "href": "/services" },
+      { "label": "About Us", "href": "/about" },
+      { "label": "Our Work", "href": "/work" },
+      { "label": "Contact", "href": "/contact" }
+    ],
+    "footer": [
+      { "label": "Privacy Policy", "href": "/privacy-policy" },
+      { "label": "Terms & Conditions", "href": "/terms-and-conditions" }
+    ]
+  }
+}

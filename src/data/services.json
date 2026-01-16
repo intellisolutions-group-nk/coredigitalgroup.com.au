@@ -1,0 +1,82 @@
+{
+  "services": [
+    {
+      "id": "website-design-development",
+      "title": "Website Design & Development",
+      "shortDescription": "Custom websites built to convert visitors into customers. We create responsive, fast-loading websites tailored to your business goals.",
+      "icon": "code",
+      "features": [
+        "Custom responsive design",
+        "Content management systems",
+        "E-commerce solutions",
+        "Performance optimisation",
+        "Ongoing maintenance & support"
+      ]
+    },
+    {
+      "id": "digital-marketing",
+      "title": "Digital Marketing Strategy & Management",
+      "shortDescription": "Strategic digital marketing campaigns designed to grow your online presence and drive measurable business results.",
+      "icon": "chart",
+      "features": [
+        "Market research & analysis",
+        "Campaign strategy development",
+        "Multi-channel marketing",
+        "Performance tracking",
+        "ROI-focused approach"
+      ]
+    },
+    {
+      "id": "seo",
+      "title": "Search Engine Optimisation (SEO)",
+      "shortDescription": "Improve your search rankings and drive organic traffic with our comprehensive SEO services.",
+      "icon": "search",
+      "features": [
+        "Technical SEO audits",
+        "On-page optimisation",
+        "Content strategy",
+        "Link building",
+        "Local SEO"
+      ]
+    },
+    {
+      "id": "social-media-marketing",
+      "title": "Social Media Marketing & Management",
+      "shortDescription": "Build your brand presence and engage with your audience through strategic social media management.",
+      "icon": "users",
+      "features": [
+        "Content creation & curation",
+        "Community management",
+        "Engagement strategies",
+        "Analytics & reporting",
+        "Campaign management"
+      ]
+    },
+    {
+      "id": "paid-advertising",
+      "title": "Paid Advertising",
+      "shortDescription": "Maximise your advertising budget with targeted paid campaigns that deliver qualified leads and conversions.",
+      "icon": "target",
+      "features": [
+        "Search advertising",
+        "Display advertising",
+        "Remarketing campaigns",
+        "A/B testing",
+        "Budget optimisation"
+      ]
+    },
+    {
+      "id": "branding-creative",
+      "title": "Branding & Creative Services",
+      "shortDescription": "Create a memorable brand identity that resonates with your target audience and sets you apart from competitors.",
+      "icon": "palette",
+      "features": [
+        "Logo design",
+        "Brand identity development",
+        "Visual guidelines",
+        "Marketing collateral",
+        "Brand messaging"
+      ]
+    }
+  ]
+}
