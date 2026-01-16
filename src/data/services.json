@@ -4,6 +4,7 @@
       "id": "website-design-development",
       "title": "Website Design & Development",
       "shortDescription": "Custom websites built to convert visitors into customers. We create responsive, fast-loading websites tailored to your business goals.",
+      "fullDescription": "Your website is often the first impression potential customers have of your business. We design and develop custom websites that not only look stunning but also deliver results. From small business websites to complex e-commerce platforms, we build solutions that work for your specific needs.",
       "icon": "code",
       "features": [
         "Custom responsive design",
@@ -11,12 +12,38 @@
         "E-commerce solutions",
         "Performance optimisation",
         "Ongoing maintenance & support"
+      ],
+      "benefits": [
+        {
+          "title": "Mobile-First Approach",
+          "description": "Every website we build is fully responsive and optimised for all devices, ensuring a seamless experience for your visitors."
+        },
+        {
+          "title": "Fast Loading Times",
+          "description": "We optimise every aspect of your website for speed, improving user experience and search engine rankings."
+        },
+        {
+          "title": "SEO-Ready Structure",
+          "description": "Our websites are built with SEO best practices from the ground up, giving you a strong foundation for organic growth."
+        },
+        {
+          "title": "Easy Content Management",
+          "description": "Update your website content easily with user-friendly content management systems tailored to your needs."
+        }
+      ],
+      "process": [
+        "Discovery & requirements gathering",
+        "Wireframing & design concepts",
+        "Development & testing",
+        "Launch & training",
+        "Ongoing support & maintenance"
       ]
     },
     {
       "id": "digital-marketing",
       "title": "Digital Marketing Strategy & Management",
       "shortDescription": "Strategic digital marketing campaigns designed to grow your online presence and drive measurable business results.",
+      "fullDescription": "In today's competitive digital landscape, having a clear marketing strategy is essential. We develop comprehensive digital marketing strategies that align with your business objectives and deliver measurable results. Our data-driven approach ensures every dollar you spend works towards achieving your goals.",
       "icon": "chart",
       "features": [
         "Market research & analysis",
@@ -24,12 +51,38 @@
         "Multi-channel marketing",
         "Performance tracking",
         "ROI-focused approach"
+      ],
+      "benefits": [
+        {
+          "title": "Data-Driven Decisions",
+          "description": "We use analytics and data to inform every decision, ensuring your marketing budget is spent effectively."
+        },
+        {
+          "title": "Integrated Campaigns",
+          "description": "Our strategies connect all your marketing channels for a cohesive brand experience across platforms."
+        },
+        {
+          "title": "Measurable Results",
+          "description": "Clear KPIs and regular reporting keep you informed about your campaign performance and ROI."
+        },
+        {
+          "title": "Scalable Solutions",
+          "description": "Our strategies grow with your business, allowing you to scale your marketing efforts as needed."
+        }
+      ],
+      "process": [
+        "Business & market analysis",
+        "Strategy development",
+        "Campaign planning & setup",
+        "Execution & monitoring",
+        "Optimisation & reporting"
       ]
     },
     {
       "id": "seo",
       "title": "Search Engine Optimisation (SEO)",
       "shortDescription": "Improve your search rankings and drive organic traffic with our comprehensive SEO services.",
+      "fullDescription": "Ranking higher on search engines means more visibility, more traffic, and more customers. Our SEO services are designed to improve your organic search presence and drive qualified traffic to your website. We use proven techniques and stay current with algorithm changes to deliver sustainable results.",
       "icon": "search",
       "features": [
         "Technical SEO audits",
@@ -37,12 +90,38 @@
         "Content strategy",
         "Link building",
         "Local SEO"
+      ],
+      "benefits": [
+        {
+          "title": "Increased Visibility",
+          "description": "Higher rankings mean more potential customers find your business when searching for your products or services."
+        },
+        {
+          "title": "Quality Traffic",
+          "description": "SEO brings visitors who are actively searching for what you offer, resulting in higher conversion rates."
+        },
+        {
+          "title": "Long-Term Results",
+          "description": "Unlike paid advertising, SEO builds lasting organic presence that continues to deliver results over time."
+        },
+        {
+          "title": "Local Dominance",
+          "description": "Our local SEO strategies help you capture customers in your service area and appear in local search results."
+        }
+      ],
+      "process": [
+        "Comprehensive SEO audit",
+        "Keyword research & strategy",
+        "On-page & technical fixes",
+        "Content optimisation",
+        "Ongoing monitoring & refinement"
       ]
     },
     {
       "id": "social-media-marketing",
       "title": "Social Media Marketing & Management",
       "shortDescription": "Build your brand presence and engage with your audience through strategic social media management.",
+      "fullDescription": "Social media is where your customers spend their time. We help you build a strong social presence that engages your audience, builds brand loyalty, and drives business results. From content creation to community management, we handle every aspect of your social media presence.",
       "icon": "users",
       "features": [
         "Content creation & curation",
@@ -50,12 +129,38 @@
         "Engagement strategies",
         "Analytics & reporting",
         "Campaign management"
+      ],
+      "benefits": [
+        {
+          "title": "Brand Awareness",
+          "description": "Consistent, quality content builds recognition and keeps your brand top of mind with your audience."
+        },
+        {
+          "title": "Customer Engagement",
+          "description": "Active community management builds relationships and turns followers into loyal customers."
+        },
+        {
+          "title": "Content That Converts",
+          "description": "Strategic content that not only engages but also drives traffic and conversions for your business."
+        },
+        {
+          "title": "Platform Expertise",
+          "description": "We know what works on each platform and tailor your content accordingly for maximum impact."
+        }
+      ],
+      "process": [
+        "Social media audit",
+        "Strategy & content calendar",
+        "Content creation",
+        "Publishing & engagement",
+        "Analysis & optimisation"
       ]
     },
     {
       "id": "paid-advertising",
       "title": "Paid Advertising",
       "shortDescription": "Maximise your advertising budget with targeted paid campaigns that deliver qualified leads and conversions.",
+      "fullDescription": "Get immediate visibility and drive targeted traffic with strategic paid advertising campaigns. Whether it's Google Ads, social media advertising, or display campaigns, we create and manage campaigns that maximise your return on ad spend and deliver qualified leads to your business.",
       "icon": "target",
       "features": [
         "Search advertising",
@@ -63,12 +168,38 @@
         "Remarketing campaigns",
         "A/B testing",
         "Budget optimisation"
+      ],
+      "benefits": [
+        {
+          "title": "Immediate Results",
+          "description": "Unlike organic strategies, paid advertising delivers immediate visibility and traffic to your website."
+        },
+        {
+          "title": "Precise Targeting",
+          "description": "Reach exactly the right audience with detailed targeting options based on demographics, interests, and behaviour."
+        },
+        {
+          "title": "Budget Control",
+          "description": "Full control over your spending with flexible budgets and the ability to scale campaigns up or down."
+        },
+        {
+          "title": "Measurable ROI",
+          "description": "Track every click, conversion, and dollar spent with detailed reporting and analytics."
+        }
+      ],
+      "process": [
+        "Account setup & audit",
+        "Campaign strategy",
+        "Ad creation & targeting",
+        "Launch & monitoring",
+        "Continuous optimisation"
       ]
     },
     {
       "id": "branding-creative",
       "title": "Branding & Creative Services",
       "shortDescription": "Create a memorable brand identity that resonates with your target audience and sets you apart from competitors.",
+      "fullDescription": "Your brand is more than just a logo. It's the entire experience customers have with your business. We help you develop a cohesive brand identity that communicates your values, connects with your audience, and differentiates you from competitors. From visual identity to brand messaging, we create brands that leave lasting impressions.",
       "icon": "palette",
       "features": [
         "Logo design",
@@ -76,6 +207,31 @@
         "Visual guidelines",
         "Marketing collateral",
         "Brand messaging"
+      ],
+      "benefits": [
+        {
+          "title": "Stand Out",
+          "description": "A distinctive brand identity helps you stand out in a crowded market and be remembered by customers."
+        },
+        {
+          "title": "Build Trust",
+          "description": "Professional, consistent branding builds credibility and trust with your target audience."
+        },
+        {
+          "title": "Consistent Experience",
+          "description": "Brand guidelines ensure consistency across all touchpoints, strengthening brand recognition."
+        },
+        {
+          "title": "Emotional Connection",
+          "description": "Strategic brand messaging creates emotional connections that turn customers into advocates."
+        }
+      ],
+      "process": [
+        "Brand discovery workshop",
+        "Research & strategy",
+        "Visual identity design",
+        "Brand guidelines creation",
+        "Asset development & rollout"
       ]
     }
   ]

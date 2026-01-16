@@ -6,6 +6,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import AnimatedSection from '@/components/ui/AnimatedSection';
 import Modal from '@/components/ui/Modal';
+import FAQAccordion from '@/components/ui/FAQAccordion';
 import { MailIcon, MapPinIcon } from '@/components/ui/Icons';
 import siteConfig from '@/data/siteConfig.json';
 
@@ -255,8 +256,8 @@ export default function ContactPage() {
           </AnimatedSection>
 
           <div className="mx-auto max-w-3xl">
-            <div className="space-y-4">
-              {[
+            <FAQAccordion
+              items={[
                 {
                   question: 'How quickly can you start on my project?',
                   answer: 'We typically begin new projects within 1-2 weeks of signing off on the proposal. For urgent requirements, we can often accommodate faster timelines.',
@@ -273,17 +274,8 @@ export default function ContactPage() {
                   question: 'Can you work with my existing branding?',
                   answer: 'Absolutely. We are experienced in working with existing brand guidelines and can ensure all digital assets align with your established identity.',
                 },
-              ].map((faq, index) => (
-                <AnimatedSection key={index} delay={index * 0.1}>
-                  <div className="rounded-xl bg-white p-6 shadow-sm">
-                    <h3 className="font-display text-lg font-semibold text-secondary-900">
-                      {faq.question}
-                    </h3>
-                    <p className="mt-2 text-secondary-600">{faq.answer}</p>
-                  </div>
-                </AnimatedSection>
-              ))}
-            </div>
+              ]}
+            />
           </div>
         </div>
       </section>

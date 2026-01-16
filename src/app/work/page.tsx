@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import AnimatedSection from '@/components/ui/AnimatedSection';
-import { ArrowRightIcon, SparklesIcon } from '@/components/ui/Icons';
+import { ArrowRightIcon } from '@/components/ui/Icons';
 
 export const metadata: Metadata = {
   title: 'Our Work',
@@ -33,31 +33,10 @@ export default function WorkPage() {
         </div>
       </section>
 
-      {/* Portfolio Placeholder Section */}
+      {/* Portfolio Grid Section */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <AnimatedSection className="mx-auto max-w-4xl">
-            <div className="rounded-3xl bg-secondary-50 p-12 text-center">
-              <div className="mx-auto mb-6 inline-flex h-20 w-20 items-center justify-center rounded-2xl bg-primary-100">
-                <SparklesIcon className="h-10 w-10 text-primary-600" />
-              </div>
-              <h2 className="heading-3 mb-4 text-secondary-900">
-                Portfolio Coming Soon
-              </h2>
-              <p className="body-large mx-auto mb-8 max-w-2xl">
-                We are currently curating our best work to showcase here. 
-                In the meantime, get in touch to discuss how we can help 
-                with your project.
-              </p>
-              <Link href="/contact" className="btn-primary">
-                Discuss Your Project
-                <ArrowRightIcon className="ml-2 h-5 w-5" />
-              </Link>
-            </div>
-          </AnimatedSection>
-
-          {/* Portfolio Grid */}
-          <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {[
               { 
                 image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',

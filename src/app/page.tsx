@@ -4,7 +4,8 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import AnimatedSection from '@/components/ui/AnimatedSection';
 import ServiceCard from '@/components/ui/ServiceCard';
-import { ArrowRightIcon, SparklesIcon, ZapIcon, ShieldIcon, HeartIcon } from '@/components/ui/Icons';
+import { ArrowRightIcon, SparklesIcon, ZapIcon, ShieldIcon, HeartIcon, GlobeIcon, CheckIcon } from '@/components/ui/Icons';
+import FAQAccordion from '@/components/ui/FAQAccordion';
 import servicesData from '@/data/services.json';
 import siteConfig from '@/data/siteConfig.json';
 
@@ -189,6 +190,7 @@ export default function HomePage() {
                 title={service.title}
                 shortDescription={service.shortDescription}
                 icon={service.icon}
+                slug={service.id}
                 index={index}
               />
             ))}
@@ -280,6 +282,130 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* How We Work Section */}
+      <section className="section-padding bg-white">
+        <div className="container-custom">
+          <AnimatedSection className="mx-auto mb-16 max-w-3xl text-center">
+            <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-primary-600">
+              Our Process
+            </span>
+            <h2 className="heading-2 mb-4 text-secondary-900">
+              How We Work With You
+            </h2>
+            <p className="body-large">
+              A proven process that ensures successful outcomes for every project.
+            </p>
+          </AnimatedSection>
+
+          <div className="relative">
+            {/* Connector Line */}
+            <div className="absolute left-0 right-0 top-12 hidden h-0.5 lg:block">
+              <div className="mx-auto h-full w-3/4 bg-primary-200" />
+            </div>
+
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+              {[
+                {
+                  step: '01',
+                  title: 'Discovery',
+                  description: 'We start by understanding your business, goals, target audience, and what success looks like for you.',
+                },
+                {
+                  step: '02',
+                  title: 'Strategy',
+                  description: 'Based on our findings, we develop a tailored strategy and detailed plan to achieve your objectives.',
+                },
+                {
+                  step: '03',
+                  title: 'Execution',
+                  description: 'Our team brings the strategy to life with precision, keeping you informed at every step.',
+                },
+                {
+                  step: '04',
+                  title: 'Optimise',
+                  description: 'We continuously monitor, measure, and refine to ensure ongoing improvement and results.',
+                },
+              ].map((item, index) => (
+                <AnimatedSection key={index} delay={index * 0.1}>
+                  <div className="relative text-center">
+                    <div className="relative z-10 mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-primary-600 font-display text-2xl font-bold text-white shadow-lg">
+                      {item.step}
+                    </div>
+                    <h3 className="heading-4 mb-3 text-secondary-900">{item.title}</h3>
+                    <p className="body-text">{item.description}</p>
+                  </div>
+                </AnimatedSection>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Industries Section */}
+      <section className="section-padding bg-secondary-50">
+        <div className="container-custom">
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+            <AnimatedSection direction="left">
+              <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-primary-600">
+                Industries We Serve
+              </span>
+              <h2 className="heading-2 mb-6 text-secondary-900">
+                Expertise Across Sectors
+              </h2>
+              <p className="body-text mb-6">
+                We have worked with businesses across a wide range of industries, 
+                giving us unique insights into what works in different markets. 
+                Our cross-sector experience means we bring fresh perspectives 
+                and proven strategies to every project.
+              </p>
+              <div className="grid gap-3 sm:grid-cols-2">
+                {[
+                  'E-Commerce & Retail',
+                  'Professional Services',
+                  'Healthcare & Wellness',
+                  'Real Estate',
+                  'Hospitality & Tourism',
+                  'Construction & Trades',
+                  'Education & Training',
+                  'Technology & SaaS',
+                ].map((industry, index) => (
+                  <div key={index} className="flex items-center gap-2">
+                    <CheckIcon className="h-5 w-5 flex-shrink-0 text-primary-600" />
+                    <span className="text-secondary-700">{industry}</span>
+                  </div>
+                ))}
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection direction="right">
+              <div className="grid gap-4 sm:grid-cols-2">
+                {[
+                  { icon: GlobeIcon, label: 'Australia Wide', desc: 'Serving businesses across all states' },
+                  { icon: ZapIcon, label: 'Fast Delivery', desc: 'Quick turnaround on all projects' },
+                  { icon: ShieldIcon, label: 'Secure Solutions', desc: 'Secure development practices' },
+                  { icon: HeartIcon, label: 'Client First', desc: 'Your success is our priority' },
+                ].map((item, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1 }}
+                    className="rounded-xl bg-white p-6 shadow-sm"
+                  >
+                    <div className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary-100 text-primary-600">
+                      <item.icon className="h-6 w-6" />
+                    </div>
+                    <h3 className="mb-1 font-display font-semibold text-secondary-900">{item.label}</h3>
+                    <p className="text-sm text-secondary-600">{item.desc}</p>
+                  </motion.div>
+                ))}
+              </div>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
       <section className="section-padding bg-white">
         <div className="container-custom">
@@ -295,7 +421,7 @@ export default function HomePage() {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                quote: 'Core Digital Group transformed our online presence completely. Our website traffic increased by 150% within three months.',
+                quote: 'Core Digital Group transformed our online presence completely. The results exceeded our expectations.',
                 name: 'James Mitchell',
                 role: 'Managing Director',
               },
@@ -322,6 +448,58 @@ export default function HomePage() {
               </AnimatedSection>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="section-padding bg-secondary-50">
+        <div className="container-custom">
+          <AnimatedSection className="mx-auto mb-12 max-w-3xl text-center">
+            <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-primary-600">
+              FAQ
+            </span>
+            <h2 className="heading-2 mb-4 text-secondary-900">
+              Frequently Asked Questions
+            </h2>
+            <p className="body-large">
+              Have questions? Here are some answers to help you get started.
+            </p>
+          </AnimatedSection>
+
+          <div className="mx-auto max-w-3xl">
+            <FAQAccordion
+              items={[
+                {
+                  question: 'What services does Core Digital Group offer?',
+                  answer: 'We offer a comprehensive range of digital services including website design and development, SEO, digital marketing strategy, social media management, paid advertising, and branding. We can handle all aspects of your online presence.',
+                },
+                {
+                  question: 'How long does it take to build a website?',
+                  answer: 'The timeline depends on the project scope. A standard business website typically takes 2-4 weeks, while more complex projects like e-commerce sites may take 6-12 weeks. We provide detailed timelines during our initial consultation.',
+                },
+                {
+                  question: 'Do you work with businesses outside of Australia?',
+                  answer: 'While we are based in Australia and primarily serve Australian businesses, we do work with international clients. Our digital-first approach means we can collaborate effectively regardless of location.',
+                },
+                {
+                  question: 'What makes Core Digital Group different from other agencies?',
+                  answer: 'We focus on results, not just deliverables. Every strategy we create is tailored to your specific business goals, and we provide transparent reporting so you can see exactly how your investment is performing.',
+                },
+                {
+                  question: 'Do you offer ongoing support after project completion?',
+                  answer: 'Yes, we offer various support and maintenance packages to ensure your digital assets continue to perform optimally. We believe in building long-term partnerships with our clients.',
+                },
+              ]}
+            />
+          </div>
+
+          <AnimatedSection className="mt-12 text-center" delay={0.3}>
+            <p className="mb-4 text-secondary-600">Still have questions?</p>
+            <Link href="/contact" className="btn-primary">
+              Contact Us
+              <ArrowRightIcon className="ml-2 h-5 w-5" />
+            </Link>
+          </AnimatedSection>
         </div>
       </section>
 

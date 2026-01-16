@@ -45,6 +45,7 @@ export default function ServicesPage() {
                 title={service.title}
                 shortDescription={service.shortDescription}
                 icon={service.icon}
+                slug={service.id}
                 features={service.features}
                 index={index}
                 showFeatures={true}
