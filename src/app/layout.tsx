@@ -32,6 +32,11 @@ export const metadata: Metadata = {
     'website development',
   ],
   authors: [{ name: 'Core Digital Group' }],
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_AU',

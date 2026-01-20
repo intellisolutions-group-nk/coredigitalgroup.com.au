@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import siteConfig from '@/data/siteConfig.json';
@@ -59,10 +60,8 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed left-0 right-0 top-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-white/95 shadow-sm backdrop-blur-md'
-          : 'bg-transparent'
+      className={`fixed left-0 right-0 top-0 z-50 bg-white transition-all duration-300 ${
+        isScrolled ? 'shadow-sm' : ''
       }`}
     >
       <nav className="container-custom">
@@ -70,23 +69,16 @@ export default function Header() {
           {/* Logo */}
           <Link
             href="/"
-            className="relative z-50 flex items-center gap-2 transition-transform duration-300 hover:scale-105"
+            className="relative z-50 flex items-center transition-transform duration-300 hover:scale-105"
           >
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-600">
-              <span className="font-display text-xl font-bold text-white">C</span>
-            </div>
-            <div className="flex flex-col">
-              <span className={`font-display text-lg font-bold leading-tight transition-colors duration-300 ${
-                isScrolled ? 'text-secondary-900' : 'text-white'
-              }`}>
-                Core Digital
-              </span>
-              <span className={`text-xs font-medium uppercase tracking-wider transition-colors duration-300 ${
-                isScrolled ? 'text-primary-600' : 'text-primary-300'
-              }`}>
-                Group
-              </span>
-            </div>
+            <Image
+              src="/CoreDigitalGroupLogo.png"
+              alt="Core Digital Group"
+              width={200}
+              height={50}
+              className="h-12 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -103,10 +95,8 @@ export default function Header() {
                       onClick={() => setIsServicesOpen(!isServicesOpen)}
                       className={`relative flex items-center gap-1 rounded-lg px-4 py-2 text-sm font-medium transition-all duration-200 ${
                         isActive
-                          ? isScrolled ? 'text-primary-600' : 'text-white'
-                          : isScrolled
-                            ? 'text-secondary-700 hover:bg-secondary-100 hover:text-secondary-900'
-                            : 'text-white/80 hover:bg-white/10 hover:text-white'
+                          ? 'text-primary-600'
+                          : 'text-secondary-700 hover:bg-secondary-100 hover:text-secondary-900'
                       }`}
                     >
                       {item.label}
@@ -122,9 +112,7 @@ export default function Header() {
                       {isActive && (
                         <motion.div
                           layoutId="activeNav"
-                          className={`absolute bottom-0 left-4 right-4 h-0.5 rounded-full ${
-                            isScrolled ? 'bg-primary-600' : 'bg-white'
-                          }`}
+                          className="absolute bottom-0 left-4 right-4 h-0.5 rounded-full bg-primary-600"
                           transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                         />
                       )}
@@ -174,19 +162,15 @@ export default function Header() {
                     href={item.href}
                     className={`relative rounded-lg px-4 py-2 text-sm font-medium transition-all duration-200 ${
                       isActive
-                        ? isScrolled ? 'text-primary-600' : 'text-white'
-                        : isScrolled
-                          ? 'text-secondary-700 hover:bg-secondary-100 hover:text-secondary-900'
-                          : 'text-white/80 hover:bg-white/10 hover:text-white'
+                        ? 'text-primary-600'
+                        : 'text-secondary-700 hover:bg-secondary-100 hover:text-secondary-900'
                     }`}
                   >
                     {item.label}
                     {isActive && (
                       <motion.div
                         layoutId="activeNav"
-                        className={`absolute bottom-0 left-4 right-4 h-0.5 rounded-full ${
-                          isScrolled ? 'bg-primary-600' : 'bg-white'
-                        }`}
+                        className="absolute bottom-0 left-4 right-4 h-0.5 rounded-full bg-primary-600"
                         transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                       />
                     )}
@@ -206,27 +190,25 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={`relative z-50 flex h-10 w-10 items-center justify-center rounded-lg transition-colors lg:hidden ${
-              isScrolled || isMobileMenuOpen ? 'hover:bg-secondary-100' : 'hover:bg-white/10'
-            }`}
+            className="relative z-50 flex h-10 w-10 items-center justify-center rounded-lg transition-colors hover:bg-secondary-100 lg:hidden"
             aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={isMobileMenuOpen}
           >
             <div className="flex h-5 w-6 flex-col items-center justify-center">
               <span
-                className={`h-0.5 w-6 rounded-full transition-all duration-300 ${
-                  isScrolled || isMobileMenuOpen ? 'bg-secondary-900' : 'bg-white'
-                } ${isMobileMenuOpen ? 'translate-y-[3px] rotate-45' : '-translate-y-1'}`}
+                className={`h-0.5 w-6 rounded-full bg-secondary-900 transition-all duration-300 ${
+                  isMobileMenuOpen ? 'translate-y-[3px] rotate-45' : '-translate-y-1'
+                }`}
               />
               <span
-                className={`h-0.5 w-6 rounded-full transition-all duration-300 ${
-                  isScrolled || isMobileMenuOpen ? 'bg-secondary-900' : 'bg-white'
-                } ${isMobileMenuOpen ? 'opacity-0' : 'opacity-100'}`}
+                className={`h-0.5 w-6 rounded-full bg-secondary-900 transition-all duration-300 ${
+                  isMobileMenuOpen ? 'opacity-0' : 'opacity-100'
+                }`}
               />
               <span
-                className={`h-0.5 w-6 rounded-full transition-all duration-300 ${
-                  isScrolled || isMobileMenuOpen ? 'bg-secondary-900' : 'bg-white'
-                } ${isMobileMenuOpen ? '-translate-y-[3px] -rotate-45' : 'translate-y-1'}`}
+                className={`h-0.5 w-6 rounded-full bg-secondary-900 transition-all duration-300 ${
+                  isMobileMenuOpen ? '-translate-y-[3px] -rotate-45' : 'translate-y-1'
+                }`}
               />
             </div>
           </button>

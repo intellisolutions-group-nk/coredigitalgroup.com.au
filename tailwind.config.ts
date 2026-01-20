@@ -10,17 +10,17 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          50: '#f0f4ff',
-          100: '#e0e9ff',
-          200: '#c7d6fe',
-          300: '#a4b8fc',
-          400: '#7c91f8',
-          500: '#5a68f2',
-          600: '#4147e5',
-          700: '#3538ca',
-          800: '#2d30a3',
-          900: '#2a2f81',
-          950: '#1a1c4c',
+          50: '#f0f9fc',
+          100: '#e0f3f9',
+          200: '#b8e4f2',
+          300: '#8dd4eb',
+          400: '#65afcd',
+          500: '#5199b8',
+          600: '#4485a3',
+          700: '#386d86',
+          800: '#2d576b',
+          900: '#254859',
+          950: '#162d38',
         },
         secondary: {
           50: '#f8fafc',
@@ -91,7 +91,7 @@ const config: Config = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'mesh-gradient': 'linear-gradient(135deg, #1a1c4c 0%, #2d30a3 50%, #4147e5 100%)',
+        'mesh-gradient': 'linear-gradient(135deg, #162d38 0%, #2d576b 50%, #65afcd 100%)',
       },
     },
   },

@@ -64,7 +64,7 @@ export default function AboutPage() {
               <div className="relative">
                 <div className="aspect-square overflow-hidden rounded-3xl">
                   <img 
-                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=800&fit=crop" 
+                    src="/image-two.jpg" 
                     alt="Core Digital Group team" 
                     className="h-full w-full object-cover"
                   />

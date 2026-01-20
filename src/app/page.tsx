@@ -267,7 +267,7 @@ export default function HomePage() {
               <div className="relative">
                 <div className="aspect-square overflow-hidden rounded-3xl">
                   <img 
-                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=800&fit=crop" 
+                    src="/image-one.jpg" 
                     alt="Digital team collaboration" 
                     className="h-full w-full object-cover"
                   />

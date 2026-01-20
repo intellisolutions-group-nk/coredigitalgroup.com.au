@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import siteConfig from '@/data/siteConfig.json';
 
 export default function Footer() {
@@ -11,18 +12,14 @@ export default function Footer() {
         <div className="grid gap-12 lg:grid-cols-4">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <Link href="/" className="inline-flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-600">
-                <span className="font-display text-xl font-bold text-white">C</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="font-display text-lg font-bold leading-tight text-white">
-                  Core Digital
-                </span>
-                <span className="text-xs font-medium uppercase tracking-wider text-primary-400">
-                  Group
-                </span>
-              </div>
+            <Link href="/" className="inline-block">
+              <Image
+                src="/CoreDigitalGroupFooter.png"
+                alt="Core Digital Group"
+                width={200}
+                height={50}
+                className="h-12 w-auto"
+              />
             </Link>
             <p className="mt-6 max-w-md text-secondary-400">
               Professional IT services and digital marketing solutions. 

@@ -180,7 +180,7 @@ export default function WorkPage() {
             <AnimatedSection direction="right">
               <div className="rounded-2xl overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1531498860502-7c67cf02f657?w=800&h=600&fit=crop" 
+                  src="/image-three.jpg" 
                   alt="Team collaboration" 
                   className="h-full w-full object-cover"
                 />
