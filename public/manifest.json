@@ -1,0 +1,21 @@
+{
+  "name": "Core Digital Group",
+  "short_name": "Core Digital",
+  "description": "Professional IT services and digital marketing solutions in Australia",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#65afcd",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

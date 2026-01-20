@@ -6,9 +6,18 @@ import Link from 'next/link';
 import { ArrowRightIcon } from '@/components/ui/Icons';
 
 export const metadata: Metadata = {
-  title: 'Services',
+  title: 'Digital Marketing & IT Services',
   description:
-    'Explore our comprehensive IT and digital marketing services including website design, SEO, social media marketing, paid advertising, and branding.',
+    'Explore our comprehensive IT and digital marketing services including website design, SEO, social media marketing, paid advertising, and branding. Professional solutions for Australian businesses.',
+  keywords: ['digital marketing services', 'website design Australia', 'SEO services Sydney', 'social media marketing', 'paid advertising', 'branding agency'],
+  openGraph: {
+    title: 'Digital Marketing & IT Services | Core Digital Group',
+    description: 'Comprehensive IT and digital marketing services for Australian businesses.',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://coredigitalgroup.com.au/services',
+  },
 };
 
 export default function ServicesPage() {

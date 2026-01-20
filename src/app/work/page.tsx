@@ -4,9 +4,18 @@ import AnimatedSection from '@/components/ui/AnimatedSection';
 import { ArrowRightIcon } from '@/components/ui/Icons';
 
 export const metadata: Metadata = {
-  title: 'Our Work',
+  title: 'Our Work - Portfolio & Case Studies',
   description:
-    'View our portfolio of successful projects and case studies showcasing our digital marketing and web development expertise.',
+    'View our portfolio of successful projects and case studies showcasing our digital marketing and web development expertise. See real results from Australian businesses.',
+  keywords: ['digital marketing portfolio', 'web development case studies', 'SEO results', 'website design examples'],
+  openGraph: {
+    title: 'Our Work | Core Digital Group Portfolio',
+    description: 'Successful projects showcasing our digital marketing and web development expertise.',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://coredigitalgroup.com.au/work',
+  },
 };
 
 export default function WorkPage() {

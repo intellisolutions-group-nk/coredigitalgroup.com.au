@@ -26,8 +26,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: service.title,
-    description: service.shortDescription,
+    title: `${service.title} Services Australia`,
+    description: `${service.shortDescription} Professional ${service.title.toLowerCase()} services for Australian businesses by Core Digital Group.`,
+    keywords: [service.title.toLowerCase(), `${service.title.toLowerCase()} Australia`, `${service.title.toLowerCase()} services`, 'digital marketing'],
+    openGraph: {
+      title: `${service.title} | Core Digital Group`,
+      description: service.shortDescription,
+      type: 'website',
+    },
+    alternates: {
+      canonical: `https://coredigitalgroup.com.au/services/${slug}`,
+    },
   };
 }
 

@@ -7,6 +7,13 @@ import siteConfig from '@/data/siteConfig.json';
 export const metadata: Metadata = {
   title: 'Terms & Conditions',
   description: 'Terms and Conditions for Core Digital Group - the rules and guidelines for using our website and services.',
+  robots: {
+    index: true,
+    follow: false,
+  },
+  alternates: {
+    canonical: 'https://coredigitalgroup.com.au/terms-and-conditions',
+  },
 };
 
 const sections = [

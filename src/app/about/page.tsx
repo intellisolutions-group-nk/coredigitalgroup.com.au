@@ -4,9 +4,18 @@ import AnimatedSection from '@/components/ui/AnimatedSection';
 import { ArrowRightIcon, ZapIcon, HeartIcon, ShieldIcon, GlobeIcon } from '@/components/ui/Icons';
 
 export const metadata: Metadata = {
-  title: 'About Us',
+  title: 'About Us - Our Story & Mission',
   description:
-    'Learn about Core Digital Group - your trusted partner for IT services and digital marketing solutions in Australia.',
+    'Learn about Core Digital Group - your trusted partner for IT services and digital marketing solutions in Australia. Discover our values, approach, and commitment to helping businesses succeed online.',
+  keywords: ['about Core Digital Group', 'digital agency Australia', 'IT company Sydney', 'digital marketing team'],
+  openGraph: {
+    title: 'About Core Digital Group',
+    description: 'Your trusted partner for IT services and digital marketing solutions in Australia.',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://coredigitalgroup.com.au/about',
+  },
 };
 
 export default function AboutPage() {

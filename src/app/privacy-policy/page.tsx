@@ -6,7 +6,14 @@ import siteConfig from '@/data/siteConfig.json';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'Privacy Policy for Core Digital Group - how we collect, use, and protect your personal information.',
+  description: 'Privacy Policy for Core Digital Group - how we collect, use, and protect your personal information. Your privacy matters to us.',
+  robots: {
+    index: true,
+    follow: false,
+  },
+  alternates: {
+    canonical: 'https://coredigitalgroup.com.au/privacy-policy',
+  },
 };
 
 const sections = [
